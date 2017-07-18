@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dIJ-vg-wUN" kind="relationship" relationship="viewControllers" id="KqX-yb-mzL"/>
+                        <segue destination="JHu-At-wi8" kind="relationship" relationship="viewControllers" id="fSf-tp-0qN"/>
+                        <segue destination="wNB-TK-yB3" kind="relationship" relationship="viewControllers" id="iF1-I8-ZwB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--UseI-->
+        <scene sceneID="5Fz-Xa-BYf">
+            <objects>
+                <viewController id="dIJ-vg-wUN" customClass="UseIBViewController" customModule="AboutAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EUw-pb-o46"/>
+                        <viewControllerLayoutGuide type="bottom" id="qfZ-x4-JEf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aJZ-Hz-Slv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="use IB" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="76r-Z9-d2J">
+                                <rect key="frame" x="16" y="20" width="343" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WMo-da-hsO"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKt-9t-lYM" customClass="GetWildButton" customModule="AboutAutoLayout" customModuleProvider="target">
+                                <rect key="frame" x="40" y="580" width="295" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRr-1a-Vcd">
+                                <rect key="frame" x="25" y="90" width="325" height="482"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="76r-Z9-d2J" firstAttribute="top" secondItem="aJZ-Hz-Slv" secondAttribute="topMargin" constant="20" id="9CX-I1-4mk"/>
+                            <constraint firstItem="jRr-1a-Vcd" firstAttribute="trailing" secondItem="aJZ-Hz-Slv" secondAttribute="trailing" constant="-25" id="BQa-bF-SwY"/>
+                            <constraint firstItem="PKt-9t-lYM" firstAttribute="leading" secondItem="aJZ-Hz-Slv" secondAttribute="leading" constant="40" id="Ni2-pX-56M"/>
+                            <constraint firstItem="76r-Z9-d2J" firstAttribute="leading" secondItem="aJZ-Hz-Slv" secondAttribute="leadingMargin" id="aBg-De-ixi"/>
+                            <constraint firstItem="jRr-1a-Vcd" firstAttribute="top" secondItem="76r-Z9-d2J" secondAttribute="bottom" constant="20" id="hwh-la-G85"/>
+                            <constraint firstItem="76r-Z9-d2J" firstAttribute="trailing" secondItem="aJZ-Hz-Slv" secondAttribute="trailingMargin" id="imf-WA-wIp"/>
+                            <constraint firstItem="PKt-9t-lYM" firstAttribute="top" secondItem="jRr-1a-Vcd" secondAttribute="bottom" constant="8" id="mg2-dQ-Vk4"/>
+                            <constraint firstItem="qfZ-x4-JEf" firstAttribute="top" secondItem="PKt-9t-lYM" secondAttribute="bottom" constant="8" symbolic="YES" id="sEH-uU-U1w"/>
+                            <constraint firstItem="jRr-1a-Vcd" firstAttribute="leading" secondItem="aJZ-Hz-Slv" secondAttribute="leading" constant="25" id="v0n-GH-alP"/>
+                            <constraint firstAttribute="trailing" secondItem="PKt-9t-lYM" secondAttribute="trailing" constant="40" id="z6X-dG-oKR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="UseI" image="IB" id="dYZ-Xc-SpJ"/>
+                    <connections>
+                        <outlet property="textViewLabel" destination="76r-Z9-d2J" id="7oe-jc-OUm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avP-Ln-W3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-655" y="758"/>
+        </scene>
+        <!--UseVFL-->
+        <scene sceneID="buI-vC-2tm">
+            <objects>
+                <viewController id="JHu-At-wi8" customClass="UseVFLViewController" customModule="AboutAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vQ3-zX-hwv"/>
+                        <viewControllerLayoutGuide type="bottom" id="93e-ej-Kmr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9yK-ZS-rwA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="use VFL" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ck8-KX-lNk">
+                                <rect key="frame" x="118" y="20" width="130" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1Q-EK-dps" customClass="GetWildButton" customModule="AboutAutoLayout" customModuleProvider="target">
+                                <rect key="frame" x="118" y="580" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jBR-K5-NWV">
+                                <rect key="frame" x="118" y="278" width="130" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="UseVFL" image="VFL" id="MII-pL-Yal"/>
+                    <connections>
+                        <outlet property="bottomButton" destination="F1Q-EK-dps" id="1Nl-U5-VcK"/>
+                        <outlet property="middleFrame" destination="jBR-K5-NWV" id="SaO-bQ-6SW"/>
+                        <outlet property="textViewLabel" destination="Ck8-KX-lNk" id="lgD-ZS-E5n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1sR-b5-V4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="758"/>
+        </scene>
+        <!--UseItem-->
+        <scene sceneID="3bn-Tm-tqZ">
+            <objects>
+                <viewController id="wNB-TK-yB3" customClass="UseItemViewController" customModule="AboutAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f9r-rA-16b"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Pt-Yn-dUr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hWs-3P-xOK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="use Item" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Npz-pD-ywj">
+                                <rect key="frame" x="118" y="20" width="130" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECJ-ql-oa1" customClass="GetWildButton" customModule="AboutAutoLayout" customModuleProvider="target">
+                                <rect key="frame" x="118" y="580" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DFK-2n-UTf">
+                                <rect key="frame" x="118" y="278" width="130" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="UseItem" image="Item" id="kvK-1Y-3cC"/>
+                    <connections>
+                        <outlet property="bottomButton" destination="ECJ-ql-oa1" id="7l8-7K-gM7"/>
+                        <outlet property="middleFrame" destination="DFK-2n-UTf" id="8ZC-Et-kcG"/>
+                        <outlet property="textViewLabel" destination="Npz-pD-ywj" id="Imf-kG-2KG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvt-zw-TKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="758"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IB" width="30" height="30"/>
+        <image name="Item" width="30" height="30"/>
+        <image name="VFL" width="30" height="30"/>
+    </resources>
+</document>
