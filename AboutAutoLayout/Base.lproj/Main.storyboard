@@ -30,7 +30,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--UseI-->
+        <!--UseIB-->
         <scene sceneID="5Fz-Xa-BYf">
             <objects>
                 <viewController id="dIJ-vg-wUN" customClass="UseIBViewController" customModule="AboutAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,7 +76,7 @@
                             <constraint firstAttribute="trailing" secondItem="PKt-9t-lYM" secondAttribute="trailing" constant="40" id="z6X-dG-oKR"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="UseI" image="IB" id="dYZ-Xc-SpJ"/>
+                    <tabBarItem key="tabBarItem" title="UseIB" image="IB" id="dYZ-Xc-SpJ"/>
                     <connections>
                         <outlet property="textViewLabel" destination="76r-Z9-d2J" id="7oe-jc-OUm"/>
                     </connections>
