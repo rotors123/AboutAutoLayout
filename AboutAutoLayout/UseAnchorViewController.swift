@@ -24,118 +24,35 @@ class UseAnchorViewController: UseIBViewController {
         middleFrame?.translatesAutoresizingMaskIntoConstraints = false
         bottomButton?.translatesAutoresizingMaskIntoConstraints = false
         
-        
-        // for TextViewLabel
-        
-        let traingSpaceTextViewLabel = NSLayoutConstraint(item: textViewLabel,
-                                                     attribute: .trailing,
-                                                     relatedBy: .equal,
-                                                     toItem: self.view,
-                                                     attribute: .trailingMargin,
-                                                     multiplier: 1,
-                                                     constant: 0)
-        
-        let leadingSpaceTextViewLabel = NSLayoutConstraint(item: textViewLabel,
-                                                     attribute: .leading,
-                                                     relatedBy: .equal,
-                                                     toItem: self.view,
-                                                     attribute: .leadingMargin,
-                                                     multiplier: 1,
-                                                     constant: 0)
-        
-        let topSpaceTextViewLabel = NSLayoutConstraint(item: textViewLabel,
-                                                     attribute: .top,
-                                                     relatedBy: .equal,
-                                                     toItem: self.view,
-                                                     attribute: .topMargin,
-                                                     multiplier: 1,
-                                                     constant: 20)
-        
-        let heightTextViewLabel = NSLayoutConstraint(item: textViewLabel,
-                                                     attribute: .height,
-                                                     relatedBy: .equal,
-                                                     toItem: nil,
-                                                     attribute: .height,
-                                                     multiplier: 1,
-                                                     constant: 50)
-        
-        // for middleFrame
-        
-        let trailingSpaceMiddleFrame = NSLayoutConstraint(item: middleFrame!,
-                                                     attribute: .trailing,
-                                                     relatedBy: .equal,
-                                                     toItem: self.view,
-                                                     attribute: .trailing,
-                                                     multiplier: 1,
-                                                     constant: -25)
-
-        let leadingSpaceMiddleFrame = NSLayoutConstraint(item: middleFrame!,
-                                                     attribute: .leading,
-                                                     relatedBy: .equal,
-                                                     toItem: self.view,
-                                                     attribute: .leading,
-                                                     multiplier: 1,
-                                                     constant: 25)
-        
-        let topSpaceMiddleFrame = NSLayoutConstraint(item: middleFrame!,
-                                                     attribute: .top,
-                                                     relatedBy: .equal,
-                                                     toItem: textViewLabel,
-                                                     attribute: .bottom,
-                                                     multiplier: 1,
-                                                     constant: 20)
-        
-        // for bottomButton
-        
-        let trailingSpaceBottomButton = NSLayoutConstraint(item: self.view,
-                                                     attribute: .trailing,
-                                                     relatedBy: .equal,
-                                                     toItem: bottomButton,
-                                                     attribute: .trailing,
-                                                     multiplier: 1,
-                                                     constant: 40)
-        
-        let leadingSpaceBottomButton = NSLayoutConstraint(item: bottomButton!,
-                                                     attribute: .leading,
-                                                     relatedBy: .equal,
-                                                     toItem: self.view,
-                                                     attribute: .leading,
-                                                     multiplier: 1,
-                                                     constant: 40)
-        
-        let topSpaceBottomButton = NSLayoutConstraint(item: bottomButton!,
-                                                     attribute: .top,
-                                                     relatedBy: .equal,
-                                                     toItem: middleFrame!,
-                                                     attribute: .bottom,
-                                                     multiplier: 1,
-                                                     constant: 8)
-        
-        let bottomSpaceBottomButton = NSLayoutConstraint(item: bottomLayoutGuide,
-                                                     attribute: .top,
-                                                     relatedBy: .equal,
-                                                     toItem: bottomButton,
-                                                     attribute: .bottom,
-                                                     multiplier: 1,
-                                                     constant: 8) // can't use Standard Constant.
-        
-        NSLayoutConstraint.activate([
+        if let view = self.view {
             
-            traingSpaceTextViewLabel,
-            leadingSpaceTextViewLabel,
-            topSpaceTextViewLabel,
-            heightTextViewLabel,
+            // for TextViewLabel
+            textViewLabel.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor,
+                                              constant: 0).isActive = true
+            textViewLabel.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor,
+                                              constant: 0).isActive = true
+            textViewLabel.topAnchor.constraint(equalTo: view.topAnchor,
+                                              constant: 20).isActive = true
+            textViewLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
             
-            trailingSpaceMiddleFrame,
-            leadingSpaceMiddleFrame,
-            topSpaceMiddleFrame,
+            // for middleFrame
+            middleFrame?.trailingAnchor.constraint(equalTo: view.trailingAnchor,
+                                              constant: -25).isActive = true
+            middleFrame?.leadingAnchor.constraint(equalTo: view.leadingAnchor,
+                                              constant: 25).isActive = true
+            middleFrame?.topAnchor.constraint(equalTo: textViewLabel.bottomAnchor,
+                                              constant: 20).isActive = true
             
-            trailingSpaceBottomButton,
-            leadingSpaceBottomButton,
-            topSpaceBottomButton,
-            bottomSpaceBottomButton,
-            
-            ])
+            // for bottomButton
+            bottomButton?.trailingAnchor.constraint(equalTo: view.trailingAnchor,
+                                              constant: -40).isActive = true
+            bottomButton?.leadingAnchor.constraint(equalTo: view.leadingAnchor,
+                                              constant: 40).isActive = true
+            bottomButton?.topAnchor.constraint(equalTo: middleFrame!.bottomAnchor,
+                                              constant: 8).isActive = true
+            bottomButton?.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor,
+                                              constant: -8).isActive = true
+        }
         
     }
     
