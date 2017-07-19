@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D40A42D1F1F1492004C5CFD /* UseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D40A42C1F1F1492004C5CFD /* UseAnchorViewController.swift */; };
 		8D87201E1F18D9140039E3B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87201D1F18D9140039E3B6 /* AppDelegate.swift */; };
 		8D8720251F18D9140039E3B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8720231F18D9140039E3B6 /* Main.storyboard */; };
 		8D87202A1F18D9140039E3B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8720281F18D9140039E3B6 /* LaunchScreen.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D40A42C1F1F1492004C5CFD /* UseAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseAnchorViewController.swift; sourceTree = "<group>"; };
 		8D87201A1F18D9140039E3B6 /* AboutAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D87201D1F18D9140039E3B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D8720241F18D9140039E3B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				8D8720311F18DA130039E3B6 /* UseIBViewController.swift */,
 				8D8720341F18DCDE0039E3B6 /* UseVFLViewController.swift */,
 				8DD476881F1DAD1D0052CAA6 /* UseItemViewController.swift */,
+				8D40A42C1F1F1492004C5CFD /* UseAnchorViewController.swift */,
 				8DD4768A1F1DE2EB0052CAA6 /* GetWildButton.swift */,
 			);
 			name = TestVCs;
@@ -156,6 +159,7 @@
 				8D8720351F18DCDE0039E3B6 /* UseVFLViewController.swift in Sources */,
 				8D87201E1F18D9140039E3B6 /* AppDelegate.swift in Sources */,
 				8DD4768B1F1DE2EB0052CAA6 /* GetWildButton.swift in Sources */,
+				8D40A42D1F1F1492004C5CFD /* UseAnchorViewController.swift in Sources */,
 				8DD476891F1DAD1D0052CAA6 /* UseItemViewController.swift in Sources */,
 				8D8720321F18DA130039E3B6 /* UseIBViewController.swift in Sources */,
 			);
